@@ -1,0 +1,146 @@
+/* Default styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5e2129; /* Dark Maroon */
+}
+
+.container {
+    background-color: #ffffff; /* White */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeInDown 0.8s ease;
+    max-width: 600px; /* Set a maximum width */
+    overflow-y: auto; /* Add vertical scrollbar */
+}
+
+h1 {
+    margin-bottom: 20px; /* Reduced margin */
+    font-size: 32px; /* Reduced font size */
+    font-weight: bold;
+    color: #e6b800; /* Gold */
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px; /* Max height for the form */
+    overflow-y: auto; /* Add vertical scrollbar for form content */
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px; /* Reduced font size */
+    color: #5e2129; /* Dark Maroon */
+}
+
+.input-field input, .input-field textarea {
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 14px; /* Reduced font size */
+    width: 150px; /* Reduced width */
+    background-color: #f2f2f2; /* Light Gray */
+    color: #5e2129; /* Dark Maroon */
+    transition: background-color 0.3s ease;
+}
+
+.input-field input:focus, .input-field textarea:focus {
+    outline: none;
+    background-color: #e6e6e6; /* Gray */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.row div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.row div:last-child {
+    margin-right: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8B0000; /* Maroon */
+    color: #ffffff; /* White */
+    font-size: 18px; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: green; /* Hover color */
+}
+
+/* Keyframe animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .input-field input, .input-field textarea {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row div {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}

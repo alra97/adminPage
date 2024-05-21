@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read Event</title>
+  <link rel="stylesheet" href="../styles/common.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Read Event</h1>
+    <form id="eventForm">
+      <div class="input-field">
+        <label for="EventId">Event ID:</label>
+        <input type="text" id="EventId" name="EventId" required>
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="button" id="readButton">Read</button>
+        <div class="col">&nbsp;</div>
+        <button type="button" class="button" id="mainScreenButton" onclick="location.href='main.html'">Main Screen</button>
+      </div>
+
+      <div id="resultContainer"></div>
+    </form>
+  </div>
+  <script type="module" src="../scripts/common.js"></script>
+</body>
+</html>

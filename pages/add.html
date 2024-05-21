@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Event</title>
+  <link rel="stylesheet" href="../styles/common.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add Event</h1>
+    <form id="eventForm">
+      <div class="input-field">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required>
+      </div>
+
+      <div class="input-field">
+        <label for="EventId">Event ID:</label>
+        <input type="text" id="EventId" name="EventId" required>
+      </div>
+
+      <div class="input-field">
+        <label for="DepartmentName">Department Name:</label>
+        <input type="text" id="DepartmentName" placeholder="E.g. LA, WPA" name="DepartmentName" required>
+      </div>
+
+      <div class="row">
+        <div class="input-field">
+          <label for="eventDay">Day:</label>
+          <input type="number" id="eventDay" name="eventDay" min="1" max="31" required>
+        </div>
+        <div class="input-field">
+          <label for="eventMonth">Month:</label>
+          <input type="number" id="eventMonth" name="eventMonth" min="1" max="12" required>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue" required>
+      </div>
+
+      <div class="row">
+        <div class="input-field">
+          <label for="startTimeHour">Start Hour:</label>
+          <input type="number" id="startTimeHour" placeholder="24h Clock Format" name="startTimeHour" min="0" max="23" required>
+        </div>
+        <div class="input-field">
+          <label for="startTimeMinute">Start Minute:</label>
+          <input type="number" id="startTimeMinute" name="startTimeMinute" placeholder="24h Clock Format" min="0" max="59" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field">
+          <label for="endTimeHour">End Hour:</label>
+          <input type="number" id="endTimeHour" name="endTimeHour" placeholder="24h Clock Format" min="0" max="23" required>
+        </div>
+        <div class="input-field">
+          <label for="endTimeMinute">End Minute:</label>
+          <input type="number" id="endTimeMinute" name="endTimeMinute" placeholder="24h Clock Format"min="0" max="59" required>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <label for="numberOfParticipants">Number of Participants:</label>
+        <input type="number" id="numberOfParticipants" name="numberOfParticipants" required>
+      </div>
+
+      <div class="input-field">
+        <label for="eventDescription">Event Description:</label>
+        <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="button" id="createButton">Create</button>
+        <button type="button" class="button" id="mainScreenButton" onclick="location.href='main.html'">Main Screen</button>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="../scripts/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- login --- main --- events -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome</h1>
+    <div class="row">&nbsp;</div>
+    <form id="loginForm">
+      <div class="input-field">
+        <label for="password">Enter the Password</label>
+        <div class="password-field">
+          <input type="password" id="password" name="password" required>
+          <button type="button" id="togglePassword">&#x1F440;</button>
+        </div>
+      </div>
+      <button type="button" id="loginButton" class="button">Login</button>
+      <div id="forgotPasswordSection">
+        <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+        <div id="securityQuestions" style="display: none;">
+            <div class="row"> 
+                <label id="securityQuestionLabel" for="securityAnswer">Security Question:</label>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <input type="text" id="securityAnswer" required>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">    
+                <button type="button" id="checkAnswerButton" class="button">Check Answer</button>
+            </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="scripts/login.js"></script>
+</body>
+</html>
